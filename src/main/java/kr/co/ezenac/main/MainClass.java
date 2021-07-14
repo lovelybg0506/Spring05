@@ -22,6 +22,14 @@ public class MainClass {
 
 		TestBean t4 = ctx.getBean("test2", TestBean.class);
 		System.out.printf("t4 : %s\n", t4);
+		
+		TestBean t5 = ctx.getBean("test3", TestBean.class);
+		System.out.printf("t5 : %s\n", t5);
+		
+		TestBean t6 = ctx.getBean("test3", TestBean.class);
+		System.out.printf("t6 : %s\n", t6);
+		
+		ctx.close();
 	}
 
 }
